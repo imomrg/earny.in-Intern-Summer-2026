@@ -1,8 +1,8 @@
 import java.util.Scanner;
 
-class Solution {
+public class LCP1 {
 
-    public int subtractProductAndSum(int n) {
+    public static int subtractProductAndSum(int n) {
 
         int product = 1;
         int sum = 0;
@@ -19,5 +19,16 @@ class Solution {
         }
 
         return product - sum;
+    }
+
+    public static void main(String[] args) {
+
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Enter a number: ");
+        int n = sc.nextInt();
+
+       int result =  subtractProductAndSum(n);
+       System.out.println("Result: " + result);
     }
 }
